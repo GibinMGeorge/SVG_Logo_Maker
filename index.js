@@ -41,7 +41,7 @@ function generateSVG(data) {
   
 // Function to write the SVG code to a file
 function writeSVGToFile(svg) {
-    fs.writeFile('logo.svg', svg, err => {
+    fs.writeFile('examples/logo.svg', svg, err => { // Save inside the examples folder
       if (err) {
         console.error('Error writing SVG file:', err);
       } else {
@@ -66,6 +66,5 @@ async function main() {
     }
 }
   
-  // Call the main function
-  main();
-  
+// Call the main function
+main();
