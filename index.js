@@ -30,12 +30,29 @@ const promptUser = () => {
 };
 
 // Function to generate the SVG code based on user input
+// Function to generate the SVG code based on user input
 const generateSVG = data => {
+  let shapeSVG;
+  switch (data.shape) {
+    case 'circle':
+      shapeSVG = `<circle cx="150" cy="100" r="80" fill="${data.shapeColor}" />`;
+      break;
+    case 'triangle':
+      shapeSVG = `<polygon points="150,18 244,182 56,182" fill="${data.shapeColor}" />`;
+      break;
+    case 'square':
+      shapeSVG = `<rect x="50" y="50" width="200" height="200" fill="${data.shapeColor}" />`;
+      break;
+    default:
+      shapeSVG = `<rect width="100%" height="100%" fill="${data.shapeColor}" />`;
+  }
+  
   return `<svg width="300" height="200">
-    <rect width="100%" height="100%" fill="${data.shapeColor}" />
+    ${shapeSVG}
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" fill="${data.textColor}">${data.text}</text>
   </svg>`;
 };
+
 
 // Function to write the SVG code to a file
 const writeSVGToFile = svg => {
