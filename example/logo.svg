@@ -1,4 +1,4 @@
 <svg width="300" height="200">
-    <circle cx="150" cy="100" r="80" fill="Blue" />
+    <circle cx="150" cy="100" r="80" fill="Red" />
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" fill="White">GMG</text>
   </svg>

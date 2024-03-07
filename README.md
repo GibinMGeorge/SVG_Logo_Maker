@@ -23,7 +23,7 @@ run the javascript file
 
 ## Usage
 
-
+https://drive.google.com/file/d/1qJLIWJNwGxEJvZT4LKKbt7vX2LRcLL5u/view?usp=sharing
 
 
 * The URL of the GitHub repository - https://github.com/GibinMGeorge/SVG_Logo_Maker
